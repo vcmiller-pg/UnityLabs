@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,8 +18,12 @@ public class AttributesDemoScript : MonoBehaviour
     [Demo(5)] public int demoField;
 
 
-    [Practice("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")]
+    [IntMask("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")]
     public int weekdays;
+    
+    
+    [IntMask("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")]
+    public string shouldNotWork;
 
     public Date date;
 }
