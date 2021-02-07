@@ -66,7 +66,7 @@ public class PracticeUnlockAreaEditor : Editor
             {
                 Undo.RecordObject(_unlockArea, "Toggle Position");
                 PrefabUtility.RecordPrefabInstancePropertyModifications(_unlockArea);
-                _unlockArea.InvertPosition(position);
+                _unlockArea.TogglePosition(position);
             }
         }
     }
