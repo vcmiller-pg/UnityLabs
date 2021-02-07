@@ -26,6 +26,8 @@ public class UnlockArea : MonoBehaviour
             return new RectInt(pos, areaSize);
         }
     }
+    
+    public RectInt LocalAreaBounds => new RectInt(Vector2Int.zero, areaSize);
 
     private int ToArrayIndex(Vector2Int pos, Vector2Int size)
     {
@@ -53,7 +55,7 @@ public class UnlockArea : MonoBehaviour
         }
     }
 
-    public void InvertPosition(Vector2Int position)
+    public void TogglePosition(Vector2Int position)
     {
         ref bool b = ref containedSquares[ToArrayIndex(position, areaSize)];
         b = !b;
