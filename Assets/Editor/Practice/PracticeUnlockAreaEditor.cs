@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(UnlockArea))]
+//[CustomEditor(typeof(UnlockArea))]
 public class PracticeUnlockAreaEditor : Editor
 {
     private UnlockArea _unlockArea;
